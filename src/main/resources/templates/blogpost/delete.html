@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Blog Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <div th:replace="~{/fragments/styling :: head-style}" ></div>
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar}" ></div>
+<div class="container delete">
+    <div class="row">
+        <div class="col-m">
+            <h3 class="py-3 text-center">This post has been deleted.</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-m text-center">
+            <a href="/">
+                <button class="btn btn-primary">Return Home</button>
+            </a>
+            <a href="/blogposts/new">
+                <button class="btn btn-secondary">Create Another Blog Post</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div th:replace="~{/fragments/styling :: body-links}" ></div>
+</body>
+</html>
